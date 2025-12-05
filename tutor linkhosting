@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img src="c:\Users\georg\.vscode\web_il_beneran\analisis.jpeg" alt="Gambar Header" class="header-gambar" />
+  <title>Website Kampanye SDGs — Aksi Bersama</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #e8f7ff;  
+    color: #003049;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #caf0f8;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+
+  .hero {
+    background: url('c:\Users\georg\.vscode\web_il_beneran\backround.jpg') no-repeat center/cover;
+    padding: 120px 7%;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  footer {
+    background: #E8F7FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  footer p {
+    opacity: 0.8;
+  }
+</style>
+</head>
+  <link rel="stylesheet" href="css4beranda_web_il.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #55a8d4;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.7;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      transition: all 0.25s ease;
+      font-size: 32px;
+      animation: fadeInDown 1s ease;
+    }
+    h1:hover { color: #facc15; transform: scale(1.04); }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      transition: all 0.25s ease;
+      font-size: 32px;
+      animation: fadeInDown 1s ease;
+    }
+    h1:hover { color: #facc15; transform: scale(1.04); }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 28px;
+      animation: fadeIn 1.2s ease;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      height: 240px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease, filter .5s ease;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.55);
+    }
+    .card:hover img {
+      transform: scale(1.08);
+      filter: brightness(.86) saturate(1.2) contrast(1.1);
+    }
+
+    
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      margin: 22px auto;
+      max-width: 1000px;
+      padding: 6px 8px;
+      animation: fadeIn 1.4s ease;
+    }
+    .carousel-track {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      will-change: transform;
+    }
+    .carousel-track img {
+      width: 140px;
+      height: 92px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .carousel-track img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    }
+
+    
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255,255,255,.04);
+      padding: 26px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+      animation: fadeIn 1.6s ease;
+    }
+    .content h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #facc15;
+    }
+    .content p {
+      color: #f3f3f3;
+      text-align: justify;
+      text-indent: 40px;
+      margin-bottom: 16px;
+    }
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 50;
+      left:0; top:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,.75);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      animation: fadeIn .5s ease;
+    }
+    .modal-content {
+      background: #1e293b;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 100%;
+      padding: 18px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      animation: fadeIn .8s ease;
+    }
+    .modal-image {
+      flex: 1 1 280px;
+      max-width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-image img {
+      max-width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .modal-text {
+      flex: 2 1 360px;
+      min-width: 240px;
+    }
+      h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      transition: all 0.25s ease;
+      font-size: 28px;
+      animation: fadeInDown 1s ease;
+    }
+    h1:hover { color: #facc15; transform: scale(1.04); }
+
+    .close:hover { color: #f87171; }
+    @media (max-width:720px){
+      .modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .modal-image, .modal-text { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+<a href="web_il_.html" class="active"> ⬅️⬅️⬅️</a>
+</nav>
+
+  <h1>" Apa itu <strong>Ekosistem Kelautan</strong> ? "</h1>
+
+  
+  <div class="card-grid">
+    <div class="card" onclick="openModal('modal1')">
+      <img src="Why protecting coral reefs protects the planet.jpg" alt="Terumbu Karang">
+    </div>
+    <div class="card" onclick="openModal('modal2')">
+      <img src="Sustainable Fishery Practices for Healthier Oceans.jpg" alt="Produki Perikanan">
+    </div>
+    <div class="card" onclick="openModal('modal3')">
+      <img src="Ocean Plastic Could Be Used to Create New Antibiotics.jpg" alt="Polusi">
+    </div>
+  </div>
+
+  
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <div class="modal-image">
+        <img src="Coral reef.jpg" alt="Angklung 1">
+      </div>
+      <div class="modal-text">
+        <h2>Kondisi Terumbu Karang</h2>
+        <p>Terumbu karang Indonesia adalah salah satu yang terluas di dunia (15% terumbu karang global !), namun mengalami tekanan berat. Sejumlah laporan menunjukkan sebagian besar terumbu terkena dampak, laporan WWF menunjukkan bahwa hanya sebagian kecil yang dalam kondisi “baik”. Laporan survei nasional melaporkan persentase besar mengalami kerusakan atau tekanan. Ini menandakan kerentanan terhadap pemutihan dan kerusakan lokal.
+
+</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="modal-image">
+        <img src="download (3).jpg" alt="">
+      </div>
+      <div class="modal-text">
+        <h2>Produksi Perikanan</h2>
+        <p>Perikanan tangkap tetap menjadi sektor ekonomi penting. BPS memublikasikan data produksi perikanan/produksi tangkap per provinsi (2023–2024) yang menunjukkan skala dan kontribusi sektor perikanan ke ekonomi lokal dan nasional. Namun data produksi tidak selalu mencerminkan keberlanjutan stok ikan. </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <div class="modal-image">
+        <img src="Photo by @mpophotography 🇮🇹-“I rifiuti si stanno accumulando negli oceani, ma quelli che si vedono in superficie non sono nulla rispetto a….jpg" alt="">
+      </div>
+      <div class="modal-text">
+        <h2>Polusi Plastik & Sampah Laut</h2>
+        <p>Perkiraan kebocoran plastik ke laut dari sungai/daerah pesisir di Indonesia tinggi. World Bank dan studi lain memperkirakan ratusan ribu ton per tahun dengan estimasi 346.5 kton/tahun dengan mayoritas sumber dari Jawa & Sumatra. Pemerintah memasang target penurunan kebocoran sampah laut.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="carousel-container" aria-hidden="false">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="White storks forage at a landfill in Spain_ The amount of garbage is such that the storks no longer migrate because they can find food year-round among the trash_.jpg" alt="Carousel 1">
+      <img src="Ways Meat, Dairy, and Eggs Waste Water and Kill Us _ PETA.jpg" alt="Carousel 2">
+      <img src="These 4 items are the biggest pollution offenders in the ocean.jpg" alt="Carousel 3">
+      <img src="Who pays for Mauritius oil spill and how much_.jpg" alt="Carousel 4">
+      
+    </div>
+  </div>
+
+  
+  <div class="content">
+
+    <h2>Tantangan & Hambatan Indonesia dalam Mencapai SDGs 14</h2>
+    <p><strong>Ekonomi📊</strong></p>
+
+    <p>
+Nelayan kecil bergantung pada hasil tangkapan harian yang menghasilkan eksploitasi berlebihan.
+I(illegal) U(unreported) U(unregulated) Fishing masih terjadi. Alternatif ekonomi hijau di wilayah pesisir masih jarang.
+    </p>
+
+
+    <p>
+<strong>Sosial & Budaya 𖠋𖠋𖠋</strong> </p>
+
+<p>
+Kebiasaan membuang sampah ke sungai dan laut serta adanya ketergantungan masyarakat pada plastik sekali pakai karena harga lebih terjangkau
+    </p>
+
+    <p>
+<strong>Politik ⚖️</p></strong> 
+
+<p>
+Koordinasi antar-instansi sering tumpang tindih, seperti KKP, KLHK, dan Pemda. Pengawasan laut sangat luas tetapi jumlah kapal patroli terbatas, seringkali petugas yang berpatroli tidak melakukan tugasnya secara maksimal.
+Kasus limbah impor plastik menunjukkan kebocoran sistem regulasi.
+</p>
+
+<p>
+<strong>Lingkungan & Perubahan Iklim 🌦️</p></strong> 
+
+<p>
+Pemutihan karang akibat kenaikan suhu laut. Adanya Abrasi pantai karena hilangnya mangrove perubahan ini juga menyebabkan penurunan stok ikan-ikan dan tertentu, seperti ikan tongkol dan kembung.
+Dengan stok yang terbatas, ikan-ikan tersebut mengalami inflasi atau kenaikan pada harga jual.
+</p>
+
+
+<p><strong>Teknologi & Pendanaan 💻</strong></p>
+
+Pendanaan restorasi akan ekosistem laut masih terbatas.
+Penerapan teknologi pemantauan seperi VMS, satelit, dan drone belum merata.
+</p>
+
+<p>
+    ──────────────────────────────────୨ৎ──────────────────────────────────
+</p>
+
+ 
+    <h2> Potensi & Peluang Indonesia Menuju SDGs 14</h2>
+    <p><strong>Sumber Daya Alam</strong></p>
+    <p>Indonesia dikenal sebagai negara yang kaya akan sumber daya alam. Laut Indoneisa kaya akan terumbu karang, mangrove, lamun yang memberikan potensi ekowisata & blue carbon. 
+        Dari ini, Indonesia disebut sebagai “mega marine biodiversity country”.
+        </p>
+
+<p><strong>Sumber Daya Manusia 𖠋𐀪</strong></p>
+    <p>Nelayan lokal memiliki kearifan tradisional seperi sasi, dan awig-awig.
+        Banyak universitas seperti UI, IPB, BRIN, ITS serta lembaga, melakukan riset mengenai kelautan.
+    </p>
+
+<P><strong>Teknologi 💻 </strong></P>
+    <p>Teknologi seperti bio-rock membantu merestorasi terumbu karang.</p>
+
+<p>──────────────────────────────────୨ৎ──────────────────────────────────</p>
+ 
+    <h2>Peran Masyarakat Indonesia dalam mewujudkan SDGs 14</h2> 
+<p><strong>Individu 🏠</strong></p>
+<p>Setiap individu dapat melakukan langkah-langkah kecil dalam upaya mewujudkan SDGs ke- 14, seperti : </p>
+
+<p>
+> Mengurangi plastik sekali pakai.
+</p>
+
+<p>
+> Mengikuti kegiatan bersih pantai.
+</p>
+
+<p>
+> Memilih seafood yang berkelanjutan (eco-label).
+</p>
+
+<p><strong>Komunitas 👥</strong></p>
+<p> Masyarakat dapat terlibat langsung dalam kegiatan nyata seperti:</p>
+
+<p>
+> Membuat bank sampah, drop point, dan koperasi daur ulang.
+</p>
+
+<p>
+> Menerapkan program patroli nelayan & konservasi lokal.
+</p>
+
+<p>
+> Penanaman mangrove dan monitoring rumpon.
+</p>
+
+<p><Strong>Sekolah 📚</Strong></p>
+<p>
+Para pelajar dapat membiasakan budaya yang ramah lingkungan ke dalam kurikulum pendidikan seperti : 
+</p>
+
+<p>
+> Melakukan aksi bersih pantai dan laut secara rutin.
+</p>
+
+<p>
+> Tidak menggunakan tempat makan dan botol minum yang terbuat dari bahan sekali pakai.
+</p>
+
+<p>
+> Belajar cara mengelolah kembali (Reuse) bahan sekali pakai.
+</p>
+
+<p>──────────────────────────────────୨ৎ──────────────────────────────────</p>
+  </div>
+
+  <script>
+    
+    function openModal(id){ document.getElementById(id).style.display = "flex"; }
+    function closeModal(id){ document.getElementById(id).style.display = "none"; }
+    window.onclick = function(ev){
+      document.querySelectorAll('.modal').forEach(m => {
+        if(ev.target === m) m.style.display = 'none';
+      });
+    };
+
+    
+    (function(){
+      const track = document.getElementById('carouselTrack');
+      if(!track) return;
+      const imgs = Array.from(track.querySelectorAll('img'));
+      const waitImgs = imgs.map(img => {
+        if(img.complete) return Promise.resolve();
+        return new Promise(res => img.onload = img.onerror = res);
+      });
+      Promise.all(waitImgs).then(() => {
+        const originalItems = Array.from(track.children);
+        originalItems.forEach(node => track.appendChild(node.cloneNode(true)));
+        originalItems.forEach(node => track.appendChild(node.cloneNode(true)));
+
+        let setWidth = 0;
+        for(let i=0;i<originalItems.length;i++){
+          const el = track.children[i];
+          setWidth += el.getBoundingClientRect().width + 12;
+        }
+        setWidth = setWidth - 12;
+
+        let pos = 0;
+        const speed = 0.45;
+        let running = true;
+        const container = track.parentElement;
+        container.addEventListener('mouseenter', ()=> running = false);
+        container.addEventListener('mouseleave', ()=> running = true);
+
+        function step(){
+          if(running){
+            pos -= speed;
+            if(Math.abs(pos) >= setWidth){ pos += setWidth; }
+            track.style.transform = `translateX(${pos}px)`;
+          }
+          requestAnimationFrame(step);
+        }
+        track.style.transform = 'translateX(0px)';
+        requestAnimationFrame(step);
+      }); 
+    })();
+  </script>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #222;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  position: relative;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s ease;
+  z-index: 0;
+}
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  z-index: 1;
+  color: white;
+}
+.card-content h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.card-content p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+.card:hover .card-background {
+  transform: scale(1.15) translateY(-5px);
+  filter: brightness(0.7) saturate(1.2) contrast(1.2) blur(2px);
+}
+
+
+.carousel-container {
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 900px;
+}
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+.carousel-track img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.artikel {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+.artikel h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.artikel h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li{float:left;}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: lightpink;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: moccasin;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 85px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .dropdown-content{
+    display: block;
+}
+
+li a, .active{
+    color: ligh
+}
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <img src="c:\Users\georg\.vscode\web_il_beneran\header main.jpeg" alt="Gambar Header" class="header-gambar" /> 
+<title>Website Kampanye SDGs — Aksi Bersama</title>
+ <style>
+  *
+    {
+      width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #e8f7ff;
+    color: #123a50;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #caf0f8;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+
+  .hero {
+    background: url('c:\Users\georg\.vscode\web_il_beneran\backround.jpg') no-repeat center/cover;
+    padding: 120px 7%;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  footer {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  footer p {
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><strong>Proyek kolaborasi IPS - PPKN - TIK</strong> </div>
+        <div>
+          <div style="font-weight:800"></div>
+          <div style="font-size:12px;color:var(--muted)">Ayo mengambil langkah untuk laut yang lebih cerah !</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="web_il_.html" class="active"></a>
+        <a href="thereealanalisis_web_il.html">Analisis 🔍 |</a>
+        <a href="solusi_web_il.html">Solusi 🧩 |</a>
+        <a href="kerjasama_web_il.html">Kerjasama 🌏|</a>
+        <a href=""></a>
+      </nav>
+
+      <div class="mobile-nav" style="display:none">
+        <a class="cta" href="web_il_.html">Gabung</a>
+      </div>
+    </header>
+
+    <!-- BERANDA -->
+    <main>
+      <section id="beranda" class="hero">
+        <div class="card">
+        
+          <h1>Apa itu SDGs ?</h1>
+          <p style="color: #003049;">﹏𓊝﹏𓂁﹏⊹ ࣪ ˖ </p> 
+          <div style="text-align: center;">
+          <img src="sdg.jpg" alt="centered image" style="width: 200px; height: auto;" />   
+          </div>
+
+<style>
+  .justified-text {
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+    hyphens: auto;
+  }
+</style>
+
+<div class="justified-text">
+            SDGs adalah singkatan dari <strong>Sustainable Development Goals</strong>  atau Tujuan Pembangunan Berkelanjutan, yaitu 17 tujuan global yang disepakati oleh PBB untuk mengakhiri kemiskinan, melindungi planet, dan memastikan semua orang menikmati perdamaian dan kesejahteraan pada tahun 2030. Agenda ini mencakup 17 tujuan utama yang menjadi panduan bagi negara-negara untuk membangun masa depan yang lebih baik dan berkelanjutan secara global.</p></p>
+         </div>
+
+         <div class="justified-text">
+        <strong>Ekosistem Lautan</strong> merupakan misi ke-14 dari 17 misi SDGs. Tujuan misi ini adalah untuk melestarikan dan memanfaatkan samudra, laut, dan sumber daya kelautan secara berkelanjutan untuk pembangunan berkelanjutan. Tujuan ini mencakup upaya untuk mengurangi polusi laut, melindungi ekosistem laut, mengatasi pengasaman laut, serta mengatur penangkapan ikan untuk mencegah praktik penangkapan berlebihan atau ilegal. 
+         </div>
+ 
+ <p style="text-align: justify;">
+       SDGs ini menjadi misi global yang dirancang untuk mengakhiri kemiskinan, melindungi planet, dan memastikan kemakmuran bagi semua pada tahun 2030. Contoh jenis-jenisnya adalah : Kesehatan & Kesejahteraan, Pendidikan Berkualitas, Aksi Iklim, Persamaan Gender, dan lain-lain.</p>
+       <a href="https://sdgs.un.org/">Pelajari Lebih Lanjut ! </a> 
+      </div>
+          <p>🗣 : Bagaimana cara kita mengambil peran dan mewujudkan misi❓ <a class="pill" href="solusi_web_il.html">Mari belajar bersama !</a></p>
+        </div>
+      </aside>
+
+  <footer>
+      <small> </small>
+    </footer>
+  </div>
+
+      <!-- TENTANG KAMI -->
+       <!doctype html>
+<html lang="id">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <img src="dragonscove.png" alt="Gambar Header" class="header-gambar" />
+      <section id="tentang">
+        <div class="card">
+          <h2>Selamat Datang !</h2>
+          <p class="lead">Perkenalkan, saya Gina dari kelas 9️⃣5️⃣, nomor absen 2️⃣2️⃣ ! Dalam website ini saya akan membahas berbagai materi terkait <strong>Sustainable Development Goals</strong>. Banyak sekali hal yang dapat kita semua pelajari dalam Website ini! Apakah kamu penasaran dengan hal-hal seputar materi tersebut? Mari Berkunjung ke Dragon’s Cove ! 🐉</p>
+
+          <div class="team" style="margin-top:12px">
+
+            <div class="Kontak informasi">
+              <div class="member">Kontak Informasi 📱:
+              <h4>The Dragon's Cove</h4>
+              <p style="color:var(--muted);margin:6px 0">🅾 : <a href="https://www.instagram.com/thedragonscove/?utm_source=ig_web_button_share_sheet">@thedragonscove</a>
+                 </p>
+
+              <h4>
+               <p style="color:var(--muted);margin:6px 0">🅾 : <a href="https://www.instagram.com/gyinatut/">@gyinatut</a>
+              </h4>
+            </div>
+
+
+
+          
+      </section>
+
+    </main>
+
+    <footer>
+      <small> </small>
+    </footer>
+  </div>
+
+
+
+       <!doctype html>
+<html lang="id">
+<head>
+<!--PENGALAMAN-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <img src="pengalaman.png" alt="Gambar Header" class="header-gambar">
+        <section id="tentang">
+        <div class="card">
+
+
+<style>
+  .card {
+     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px; 
+  }
+  .images-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+  }
+
+  .side-by-side-image {
+    width: 300px; 
+    height: auto; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; 
+  }
+
+  .side-by-side-image:hover {
+    transform: scale(1.1); 
+  }
+</style>
+
+<div class="images-row">
+  <img src="briti rat.JPG" alt="Kerja Sama 1" class="side-by-side-image" />
+  <img src="deon.png" alt="Kerja Sama 2" class="side-by-side-image" />
+</div>
+
+
+          
+                  <p style="text-align: center;"> 
+                    <p style="text-align: center;">
+  _________________
+</p>
+<h2>Mengumpulkan Sampah, Mengumpulkan Kesadaran !</h2>
+                  <p class="lead">Pengalaman saya melihat dunia bawah laut pertama kalinya 🌊</p>
+
+
+           <p style="text-align: justify;">
+            Salah satu pengalaman yang paling membuat saya sadar akan pentingnya menjaga ekosistem laut adalah ketika saya berkunjung ke Bali dan mencoba kegiatan diving bersama saudara-saudara saya. Saat itu, saya sangat semangat dan antusias karena saat itu adalah pertama kalinya saya benar-benar melihat dunia bawah laut secara langsung, bukan hanya dari foto atau video di sosial media.
+</p>
+
+           <p style="text-align: justify;">
+          <p>Sebelum menyelam kami dibawa ke pertengahan laut dan dipakaian semacam helm menyelam. Saat menyelam saya melihat banyak ikan berwarna-warni berenang di antara karang-karang yang cukup sehat. Kerang-kerang itu masih memiliki warna yang cerah. Pemandangan bawah laut itu indah dan membuat saya merasa takjub karena ternyata laut Indonesia memiliki kekayaan alam yang luar biasa. Air laut di tempat saya diving juga relatif bersih, sehingga pemandangan bawah lautnya terlihat jelas. Saya sangat bersenang-senang, karena ketika saya dan saudara saya menyelam banyak sekali ikan kecil yang menggigit kaki kami. Gigitan mereka terasa sangat geli, saya mencoba menahan kegelian saya karena tidak dapat bergerak banyak.
+</p>
+
+           <p style="text-align: justify;">
+          <p>Namun, di balik keindahan dan kesenangan itu, saya juga merasakan sedikit kekhawatiran. Sesekali, ketika sedang berenang, kaki saya tiba-tiba menginjak sampah kecil yang tersangkut di air, seperti sedotan kecil atau tutup botol plastik. Walaupun jumlahnya tidak banyak, hal itu membuat saya sadar bahwa laut kita masih belum sepenuhnya bebas dari polusi. Rasanya sayang sekali jika keindahan bawah laut harus terganggu karena sampah manusia.</p>
+          
+           <p style="text-align: justify;">
+            Yang membuat saya lebih sadar lagi adalah ketika saya melihat terdapat tempat pengumpulan sampah di dekat area diving. Di sana, kita bisa mengukur berat sampah yang kita kumpulkan dari laut atau pantai, lalu mendapatkan poin yang nantinya bisa ditukar dengan hadiah kecil. Hadiah kecil yang ditukarkan merupakan hasil daur ulang sampah-sampah plastik. Menurut saya, ini adalah ide yang sangat bagus karena membuat masyarakat lebih termotivasi untuk membantu membersihkan lingkungan. Saya Sendiri sempat mencoba menimbang sedikit sampah yang saya temukan, dan itu membuat saya merasa ikut berkontribusi, walaupun kecil.</p>
+          
+           <p style="text-align: justify;">
+              Pengalaman di Bali itu membuat saya semakin memahami betapa pentingnya Ekosistem Laut untuk masa depan. Laut bukan hanya tempat rekreasi, tetapi juga rumah bagi banyak makhluk hidup. Dari pengalaman itu, saya belajar bahwa menjaga kebersihan laut bukan hanya tugas pemerintah atau organisasi besar, tetapi juga tanggung jawab setiap orang, termasuk saya sendiri.
+</p>
+  
+
+          
+      </section>
+
+    </main>
+  <footer>
+      <small>Dibuat oleh Gina Ix-5 / 22</small>
+    </footer>
+  </div>
+
+
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <img src="c:\Users\georg\.vscode\web_il_beneran\kelautan.png" alt="Gambar Header" class="header-gambar" />
+  <title>Website Kampanye SDGs — Aksi Bersama</title>
+  <style>
+  * {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #e8f7ff;
+    color: #003049;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #caf0f8;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+
+  .hero {
+    background: url('c:\Users\georg\.vscode\web_il_beneran\backround.jpg') no-repeat center/cover;
+    padding: 120px 7%;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  footer {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  footer p {
+    opacity: 0.8;
+  }
+</style>
+</head>
+<nav aria-label="Main navigation">
+<a href="web_il_.html" class="active"> ⬅️⬅️⬅️</a>
+</nav>
+
+      <section id="solusi">
+        <div class="card">
+          <h2>"Bagaimana kita dapat mengambil aksi dan membuat perubahan ?" </h2>
+          <p class="lead">SDGs merujuk pada kesepakatan pembangunan baru yang mendorong perubahan-perubahan yang bergeser ke arah pembangunan berkelanjutan yang berdasarkan hak asasi manusia dan kesetaraan untuk mendorong pembangunan sosial, ekonomi dan lingkungan hidup. SDGs diberlakukan dengan prinsip-prinsip universal, integrasi dan inklusif untuk meyakinkan bahwa tidak akan ada seorang pun yang terlewatkan atau <strong>“No-one Left Behind”.</strong></p>
+         <p>Untuk mewujudkan misi ini, nilai persatuan harus diwujudkan oleh semua masyarakat dari penjuru dunia  dan melakukan kewajiban masing-masing.
+        Setiap masyarakat dapat dan harus ikut serta berkontribusi, langkah-langkah kecil yang konsisten dapat membuahi perubahan yang besar ! Seperti : </p>
+
+<style>
+  .card {
+     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px; 
+  }
+  .images-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+  }
+
+  .side-by-side-image {
+    width: 300px; 
+    height: auto; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; 
+  }
+
+  .side-by-side-image:hover {
+    transform: scale(1.1); }
+</style>
+
+<div class="images-row">
+  <img src="bersih2.jpg" alt="Kerja Sama 1" class="side-by-side-image" />
+  <img src="cleanup.jpg" alt="Kerja Sama 2" class="side-by-side-image" />
+</div>
+
+
+          <div class="grid-3" style="margin-top:12px">
+            <div class="card">
+              <h3>Mengurangi Sampah Sekali Pakai 🥤</h3>
+              <p>Menggunakan tas guna ulang, botol minum, dan mengurangi pembelian produk plastik sekali pakai.</p>
+            </div>
+            <div class="card">
+              <h3>Gotong Royong Melakukan Bersih Pantai 🚮</h3>
+              <p>Mengadakan aksi rutin kebersihan pantai bersama sekolah, komunitas, atau organisasi lingkungan.</p>
+            </div>
+            <div class="card">
+              <h3> Edukasi Mengenai Konservasi Laut 🐠</h3>
+              <p>Kampanye pentingnya menjaga ekosistem laut, termasuk menjaga terumbu karang dan biota laut.</p>
+            </div>
+          </div>
+
+          <p>_________________</p>
+          <h4>Mengapa Persatuan ?</h4>
+          <p style="margin-top:12px">SDG14 merujuk pada aspek ekologis sekaligus sosial-ekonomi. Tanpa keterlibatan aktif komunitas pesisir, pelaku usaha, dan masyarakat umum, serta insentif ekonomi yang tepat, kebijakan sentral sulit untuk diwujudkan. Gotong-royong dan kerja bersama antar komunitas - pemerintah - swasta - & sekolah memadukan pengetahuan lokal, modal sosial, dan dukungan teknis, sehingga solusi berskala kecil bisa direplikasi dan menjadi perubahan sistemik.</p>
+          <p>Itu sebabnya nilai persatuan sudah lebih diterapkan dalam pembelajaran masa sekarang. </p>
+          <p>Sekolah-sekolah seperti SMP Santa Ursula kini telah menerapkan nilau persatuan dalam sistem pembelajaran. Melalui Proyek seperti kolaborasi antar Mata Pelajaran dan Pembelajaran yang lebih luas mengenai SDG.</p>
+          <p>Para siswi didorong untuk menerapkan Nilai Serviam Persatuan, dengan ini siswi tidak hannya mendapatkan pendidikan secara luas dan lebih dalam tetapi juga dapat berkontribusi dalam upaya mewujudkan SDG. </p>
+        </div>
+      </section>      
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <img src="kerjasama.png" alt="Gambar Header" class="header-gambar" />
+  <title>Website Kampanye SDGs — Aksi Bersama</title>
+  <style>
+  * {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #e8f7ff;
+    color: #003049;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #caf0f8;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+
+  .hero {
+    background: url('c:\Users\georg\.vscode\web_il_beneran\backround.jpg') no-repeat center/cover;
+    padding: 120px 7%;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  footer {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  footer p {
+    opacity: 0.8;
+  }
+</style>
+</head>
+
+<nav aria-label="Main navigation">
+<a href="web_il_.html" class="active"> ⬅️⬅️⬅️</a>
+</nav>
+
+
+        <div class="card">
+          <h2> Kerja Sama Indonesia – Vietnam terkait SDGs & Kelautan
+</h2>
+          <p class="lead">Contoh Kerja sama terkait ekosistem laut !</p>
+
+<style>
+  .card {
+     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px; /* curved edges */
+  }
+  .images-row {
+    display: flex;
+    justify-content: center; /* centers the images horizontally */
+    gap: 10px; /* space between images, optional */
+  }
+
+  .side-by-side-image {
+    width: 300px; /* same width for both images */
+    height: auto; /* maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* for hover zoom effect */
+  }
+
+  .side-by-side-image:hover {
+    transform: scale(1.1); /* zoom on hover */
+  }
+</style>
+
+<div class="images-row">
+  <img src="kerjasama_viet-indo.jpeg" alt="Kerja Sama 1" class="side-by-side-image" />
+  <img src="Indonesia-dan-Vietnam-Ciptakan-Peluang-Pengelolaan-Laut_2-4023723472.webp" alt="Kerja Sama 2" class="side-by-side-image" />
+</div>
+
+          <div class="grid-3" style="margin-top:12px">
+            <div class="card">
+              <h3><strong>Bilateral</strong></h3>
+              <p><Strong>Perjanjian Batas Laut</Strong></p>
+              <p>Indonesia dan Vietnam menandatangani Agreement on Exclusive Economic Zone (EEZ) Boundary tahun 2022.</p>
+              <p>Tujuan dari persetujuan adalah untuk mengurangi konflik nelayan & menguatkan pengawasan laut.</p>
+            <p>_________________</p>
+              <p><strong>Pengawasan IUU Fishing</strong></p>
+              <p>Kedua negara bekerja sama dalam :</p>
+              <P>ᯓ➤ Operasi patroli gabungan.</P>
+              <P>ᯓ➤ Pertukaran data kapal ilegal.</P>
+              <p>ᯓ➤ Penanganan nelayan yang melintasi batas negara.</p>
+            <P>_________________</P>
+             <p><strong>Perikanan & Budidaya</strong></p>
+              <P>ᯓ➤ Vietnam menjadi tujuan ekspor perikanan Indonesia.</P>
+              <P>ᯓ➤ Ada kerja sama peningkatan kapasitas nelayan & budidaya ikan (marine aquaculture).</P>
+
+            </div>
+
+             
+
+            <div class="card">
+              <h3><Strong>Regional</Strong></h3>
+             <p><strong>Melalui ASEAN</strong></p>
+             <P>Kedua Negara aktif dalam : </P>
+
+             <p><Strong>ASEAN Working Group on Coastal & Marine Environment (AWGCME)</Strong></p>
+             <p>Kelompok kerja ini berfokus pada mengurangi sampah plastik laut dan Konservasi ekosistem pesisir</p>
+
+             <p>_________________</p>
+             <p><strong>ASEAN Blue Economy Framework</strong></p>
+             <P>Kerangka kerja ini memiliki tujuan untuk memperkuat <italic>Blue Economy</italic> dan Pengembangan pariwisata laut berkelanjutan.</P>
+             
+             <p>_________________</p>
+             <p><strong>ASEAN Fisheries Consultative Forum</strong></p>
+             <P>Tujuan kerja sama forum ini adalah, untuk Kerja sama penelitian stok ikan dan Pengembangan standar seafood berkelanjutan. </P>
+
+            </div>
+
+            <div class="card">
+              <h3><strong>Multilateral</strong></h3>
+              <p><strong>Melalui PBB (UNDP, UNEP, FAO)</strong></p>
+              <p>Indonesia & Vietnam sama-sama menerima dukungan untuk:</p>
+              <P>ᯓ➤ Program konservasi mangrove.</P>
+              <P>ᯓ➤ Pengurangan sampah plastik laut.</P>
+              <p>ᯓ➤ Proyek blue carbon.</P>
+
+                <p>_________________</p>
+              <p><strong>Coral Triangle Initiative (CTI-CFF)</strong></p>
+              <p>Indonesia & Vietnam adalah bagian dari inisiatif internasional untuk :</p>
+              <P>ᯓ➤ Melindungi terumbu karang</P>
+              <P>ᯓ➤ Mengembangkan ekowisata</P>
+              <p>ᯓ➤ Mengatur perikanan regional</P>
+
+                <p>_________________</p>
+              <p><strong>World Bank & Global Environment Facility (GEF)</strong></p>
+              <p>Tujuan program pendanaan kolaboratif adalah untuk :</p>
+              <P>ᯓ➤ Pengelolaan sampah</P>
+              <P>ᯓ➤ Restorasi ekosistem pesisir</P>
+              <p>ᯓ➤ Penguatan Blue Economy</P>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
